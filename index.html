@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<!--Declracion de version de HTML
+Elemento (element)componente basico de un arhivo HTML
+Etiqueta (tag) especifica el tipo de elemento que se va a crear-->
+<html lang="es"> <!--ELEMENTO RAIZ Etiqueta de apertura, defino el idioma como atributo-->
+       <!-- Espacios de indentacion -->
+  <!-- Es lo que contiene la metadata y va antes del body -->
+  <head> <!--Enlaces de archivos externos-->
+    <!-- Le digo que use el archivo CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS rules to specify families -->
+    <!-- Le va a poner titulo de la pagina es lo que se ve en la pestaña del browser -->
+    <title>Algo sobre las placas</title>
+    <h1 id="tituloPrincipal">!Hola, Mundo soy la bomba de Cervantes 2225!</h1>
+    <h1 class="texto-azul texto-morado">!Hola, Mundo soy la bomba de Cervantes 2225!</h1> <!--El numero representa la imortancia del encabezado--> 
+    <!-- Digo que todos los encabezados h4 sean de color verde, eso es css, como la anterior, lo mejor es el archivo-->
+    <!--
+    <style>
+     h4 {
+        color: rgb(26, 146, 182);  
+      }
+    
+     h3{
+        color:purple;
+      }
+    </style> -->
+  </head> 
+  <body><!--Aquí va la estructura de la página-->
+    <h2 style="color: blue">!Hola, Mundo!</h2> <!--El numero representa la imortancia del encabezado--> 
+    <main>
+      <p>Abre página en  <a href="https://www.altium.com/es">la misma pestaña</a></p>  <!--Abre una pagina en la misma pestaña-->
+      <p>Abre página en <a href="https://www.altium.com/es" target="_blank">nueva pestaña</a></p>  
+      <!--Abre una pagina en una pestaña nueva-->
+      <p>Abre página en <a href="https://www.altium.com/es" target="_blank" rel="noopener noreferrer">nueve pestaña con seguridad</a></p>  
+      <!--Abre una pagina en una pestaña nueva con la mejora de seguridad para que no sea cambiada-->
+      <p>Prueba de parrafo paraver que onda asi vemos tambien lo dela prueba del alt z para poder ver el text tipeado sin tener que andar moviendo la</p>
+      <div id="contenedor-principal">
+        <div class="rectangulo px">200px de ancho</div>
+        <div class="rectangulo vw">20vw de ancho</div>
+        <div class="rectangulo em">15em de ancho</div>
+      </div>
+      <hr>
+      <a href="#parrafo-1">Parrafo 1</a><!--Si colocamos solo el # se crea un enlace muerto, eso dice que no vaya a ningun lado-->
+      <a href="#parrafo-2">Parrafo 2</a>
+      <a href="#parrafo-3">Parrafo 3</a>
+      <a href="#parrafo-4">Parrafo 4</a>
+
+      <div class="contenedor-listas"><!--  Lo que encierra el div es como un contenedor al cual CSS le va a aplicar los estilos -->
+        <h3>Imagenes de Placas</h3>
+        <img class="placa" src="https://previews.123rf.com/images/sashkin7/sashkin71705/sashkin7170500048/78411991-pcb-electr%C3%B3nico-de-alta-tecnolog%C3%ADa-placa-de-circuito-impreso-con-procesador-y-microchips-3d-ilustrac.jpg"  alt="Una terrible placa para"> <!-- el texto da info de la imagen cuando la misma no se puede cargar-->
+        <a href="http://www.infobae.com" target="_blank"><img src="pcb.jpg" class="placa2" alt="segunda alta placa"></a>
+
+        <hr><!--Linea Horizontal-->
+
+        <h3>Lista  de Placas</h3>
+        <!--Lista no ordenada, unordered list <li>List Item-->
+        <ul class="clase-lista"> <!--Se le arega el class para poder aplicarle solo lo atributos a este tipo -->
+          <li>Placa de Potencia</li>
+          <li>Placa de comunicación</li>
+          <li>Placa de Control</li>
+        </ul>
+        <hr>
+        <h3>Lista de <em>Componente</em></h3><!--Coloco algo cursiva-->
+        <ol id="listaComponentes"> 
+          <li>ESP8266</li>
+          <li><strong>STM32F103RCT6</strong></li><!--Coloco algo en negrita-->
+          <li><s>Triac</s></li><!--Coloco algo tachado-->
+        </ol>
+      </div>
+
+      <!--Parrafos-->
+      <hr>
+      <h3 id="parrafo-1">Párrafo 1</h3>
+      <p lang="en">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+      <h3 id="parrafo-2">Párrafo 2</h3>
+      <p lang="en">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+      <h3 id="parrafo-3">Párrafo 3</h3>
+      <p class="clase-lista" lang="en">Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+      <h4 id="parrafo-4">Párrafo 4 </h3>
+      <p lang="en">Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+      
+      <!--Campo-->
+      <form action="/enviar respuesta">
+
+        <!-- Radio  buttons -->
+        <label for="Enviar"> 
+          <input id="Enviar" type="radio" 
+                  value="Enviar" 
+                  name="TXRX" checked>Enviar
+        </label> <!--Con label for y el id hacemo que al apretar el texto lo marque-->
+        <br><!--Salto de linea-->
+        <label for="Requerir">
+          <input id="Requerir" type="radio" 
+                  value="Requerir" 
+                  name="TXRX">Requerir
+        </label><!--Con name lo que hacemos es armar el grupo de botones de radio-->
+        <br><br>
+        <!-- Casilla de verificacion -->
+        <label for="Pedir cotizacion">
+          <input id="Pedir cotizacion" type="checkbox" 
+                  value="PCOT" 
+                  name="coti" checked>Pedir cotizacion
+        </label>
+        <br>
+        <label for="Pedir costo de diseño">
+          <input id="Pedir costo de diseño" type="checkbox" 
+                  value="PCD" 
+                  name="coti">Pedir costo de diseño
+        </label>
+        <br><br>
+        <!-- Texto y boton enviar -->
+        <input type="text" placeholder="Comando MODBus" required><!--Cuadro de entrada-->
+        <br><br>
+        <button type="submit">Enviar</button>     
+      </form>
+    </main>
+    <!-- El pié de pagina no es parte del contenido principal  -->
+    <footer>
+      <p><small> Copyright <a href="https://www.linkedin.com/in/marcelo-garc%C3%ADa-8b492328/">Chelo</a></small></p>
+    </footer>
+
+  </body>
+
+</html><!-- Etiqueta de cierre, Algunas no necesitan como img Self Closing Tags-->

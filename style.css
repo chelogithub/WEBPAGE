@@ -1,0 +1,137 @@
+/* Selectores CSS * es un selecetor universal, aplica a todo del documento*/
+/* Selectores de clase permite identificar los elementos para no afectar a todos los de su tipo, 
+  puede ser de cualquier otro tipo parrafo, listas, etc
+  la clase de identifica con un punto .*/
+/* Selectores de Tipo afecta a todos los elementos de ese tipo */
+.clase-lista{
+  color: chocolate;
+}
+.placa{
+  width: 300px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: darkturquoise;
+  border-radius: 50px;
+
+  /* PADDING Separa el contenido de un elemento de su borde*/
+  /* El elemento es fijo,el pddingagrega distancia entre el elemento y su borde*/
+  /* se simplifica poniendolo así segun las agujas del reloj*/
+  /*padding: 20px 5px 10px 15px;*/
+  /* Si ponemos solo dos valores esos corresponden a sup inf - izq der */
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+
+  /*MARGIN separa a un elemento de otros elementos*/
+  /* Se puede hacer lo mismo que con el padding ponerlo en una sola livea */
+  margin: 15px;
+  background-color: white;
+}
+.placa2{
+  width: 350px;
+  border-width: 5px;
+  border-style: dashed solid dotted;
+  border-color: rgb(110, 179, 108);
+  padding: 20px;
+}
+.contenedor-listas{
+  background-color: silver;
+}
+/* Aplicar estilos a id's, tambien nos permite que JS actúe sobre ese elemento */
+#tituloPrincipal{
+  font-size: 30px;
+  color: brown;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#listaComponentes{
+  background-color: aquamarine;
+}
+
+/* Selectores de Tipo afecta a todos los elementos de ese tipo */
+h4 {
+  color: rgb(26, 146, 182);  
+  font-size: 25px;
+  }
+/* Esto aplica a los todos los estilos selccionados con las comas */
+h3,
+h2 {
+  color: purple;
+  }
+
+li{
+  color: blue;
+  background-color: beige;
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif; /* sans-serif es la fuente de respaldo, no lleva comillas porqeu es por default*/
+}
+
+footer{
+  font-family: 'Ephesis', cursive;
+}
+/*Selectores de atributo*/
+/*para todas las imagenes que tienen el atributo alt*/
+img[alt]{
+  border-radius: 50%;
+}
+[type="radio"]{
+  margin: 15px; /*Separacion entre los elementos radio*/
+}
+[type="checkbox"]{
+  margin: 10px; /*Separacion entre los elementos radio*/
+}
+a[href="https://www.altium.com/es"]{
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*Unidades relativas y absolutas*/
+#contenedor-principal{
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  background-color: rgba(255, 238, 0, 0.863);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rectangulo{
+  padding: 5px;
+  margin: 5px;
+}
+.px{
+  background-color: red;
+  width: 200px;
+}
+/*Se ajusta al ancho de la ventana del navegador*/
+.vw{
+  background-color: darkmagenta;
+  width: 20vw;
+}
+/*Realativa al tamaño de la fuente*/
+/*Si aumneta el tamano de la letra aumenta la caja*/
+.em{
+  background-color: green;
+  width: 15em;
+  font-size: 1em; /* multiplicador del tamaño de la letra*/
+}
+/*Selector de tipo para ver el Body*/
+body{
+  background-color: gray;
+  padding: 15px;
+}
+/*Prioridad de clases, el orden de tipeo de las clases en html no tiene*/
+/*orden pero si en css, siempre se aplica la ultima*/
+/*LA CLASE TIENE PRIORIDAD SOBRE LOS TIPOS DE ELEMENTOS*/
+/*EL ID TIENE PRIPORIDAD SOBRE LA CLASE*/
+/*EL ESTILO EN LINEA SE PRIORIZA POR ENCIMA DEL ID*/
+/* PARA QUE SE LO AGREAGUE SIN IMPORTAR LA JERARQUIA ANTERIOR SE DEBE COLOCAR !important, luego del atributo*/
+.texto-azul{
+  color: blue;
+  /*color: blue !important;*/
+}
+.texto-morado{
+  color: purple;
+}
+/*Abreviacion de colores en HEXA #FFAAB = #FAB
+/* Colores en RGB rgb(145,65,234) con transparencia alpha rgba(145,65,234,0,5)
+/*VARIABLES EN CSS*/
